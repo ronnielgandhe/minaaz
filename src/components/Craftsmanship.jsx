@@ -39,13 +39,13 @@ export default function Craftsmanship() {
       {/* Parallax BG */}
       <motion.div style={{ y: bgY }} className="absolute inset-[-10%] z-0">
         <img src="/images/leaf-earrings.jpg" alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-[#0a0a0a]/85" />
+        <div className="absolute inset-0 bg-[#000000]/85" />
       </motion.div>
 
       {/* Top gradient for smooth transition */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0a0a0a] to-transparent z-[5] pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#000000] to-transparent z-[5] pointer-events-none" />
       {/* Bottom gradient for smooth transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent z-[5] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#000000] to-transparent z-[5] pointer-events-none" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto">
         <div className="text-center mb-16">

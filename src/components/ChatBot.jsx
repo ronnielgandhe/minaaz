@@ -130,7 +130,7 @@ function TypingIndicator() {
   return (
     <div className="flex items-center gap-3 mb-4">
       <div className="w-7 h-7 rounded-full bg-[#c9a96e] flex items-center justify-center flex-shrink-0">
-        <span className="text-[#0a0a0a] text-[10px] font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
+        <span className="text-[#000000] text-[10px] font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
       </div>
       <div className="bg-[#141414] border-l-2 border-[#c9a96e] rounded-lg rounded-tl-none px-4 py-3 flex gap-1.5">
         {[0, 1, 2].map((i) => (
@@ -258,14 +258,14 @@ export default function ChatBot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 30, scale: 0.95 }}
             transition={{ type: 'spring', damping: 25, stiffness: 350 }}
-            className="absolute bottom-20 right-4 w-[380px] h-[520px] bg-[#0a0a0a] border border-[#c9a96e]/20 rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="absolute bottom-20 right-4 w-[380px] h-[520px] bg-[#000000] border border-[#c9a96e]/20 rounded-2xl shadow-2xl flex flex-col overflow-hidden"
             style={{ boxShadow: '0 25px 60px rgba(0,0,0,0.6), 0 0 40px rgba(201,169,110,0.08)' }}
           >
             {/* Header */}
             <div className="flex items-center justify-between px-5 py-4 border-b border-[#c9a96e]/15 bg-[#0e0e0e]">
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#c9a96e] to-[#a3823d] flex items-center justify-center">
-                  <span className="text-[#0a0a0a] text-sm font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
+                  <span className="text-[#000000] text-sm font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
                 </div>
                 <div>
                   <h3 className="text-white text-sm font-semibold tracking-wide" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -297,7 +297,7 @@ export default function ChatBot() {
                   {msg.from === 'bot' ? (
                     <div className="flex items-start gap-3 mb-4">
                       <div className="w-7 h-7 rounded-full bg-[#c9a96e] flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-[#0a0a0a] text-[10px] font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
+                        <span className="text-[#000000] text-[10px] font-bold" style={{ fontFamily: "'Playfair Display', serif" }}>M</span>
                       </div>
                       <div className="max-w-[85%]">
                         <div className="bg-[#141414] border-l-2 border-[#c9a96e] rounded-lg rounded-tl-none px-4 py-3 text-[13px] text-[#d4d4d4] leading-relaxed">
@@ -320,7 +320,7 @@ export default function ChatBot() {
                     </div>
                   ) : (
                     <div className="flex justify-end mb-4">
-                      <div className="max-w-[80%] bg-[#c9a96e] text-[#0a0a0a] rounded-lg rounded-tr-none px-4 py-3 text-[13px] leading-relaxed font-medium">
+                      <div className="max-w-[80%] bg-[#c9a96e] text-[#000000] rounded-lg rounded-tr-none px-4 py-3 text-[13px] leading-relaxed font-medium">
                         {msg.text}
                       </div>
                     </div>
@@ -365,7 +365,7 @@ export default function ChatBot() {
           onClick={() => setIsOpen((prev) => !prev)}
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.95 }}
-          className="relative w-14 h-14 rounded-full bg-gradient-to-br from-[#c9a96e] to-[#a3823d] text-[#0a0a0a] flex items-center justify-center shadow-lg cursor-pointer"
+          className="relative w-14 h-14 rounded-full bg-gradient-to-br from-[#c9a96e] to-[#a3823d] text-[#000000] flex items-center justify-center shadow-lg cursor-pointer"
           style={{ boxShadow: '0 8px 32px rgba(201,169,110,0.35)' }}
         >
           {/* Pulse ring */}

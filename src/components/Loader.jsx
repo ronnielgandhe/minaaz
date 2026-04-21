@@ -26,45 +26,8 @@ export default function Loader({ onComplete }) {
         <motion.div
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-0 z-[9999] bg-[#0a0a0a] flex flex-col items-center justify-center"
+          className="fixed inset-0 z-[9999] bg-[#000000] flex flex-col items-center justify-center"
         >
-          {/* Falling sparkles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {[...Array(30)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `-${Math.random() * 20 + 5}%`,
-                }}
-                animate={{
-                  y: ['0vh', '110vh'],
-                  rotate: [0, 360],
-                  opacity: [0, 0.6, 0.6, 0],
-                }}
-                transition={{
-                  duration: Math.random() * 4 + 3,
-                  repeat: Infinity,
-                  delay: Math.random() * 3,
-                  ease: 'linear',
-                }}
-              >
-                <svg
-                  width={Math.random() * 12 + 6}
-                  height={Math.random() * 12 + 6}
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z"
-                    fill="rgba(201, 169, 110, 0.4)"
-                  />
-                </svg>
-              </motion.div>
-            ))}
-          </div>
-
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -73,7 +36,7 @@ export default function Loader({ onComplete }) {
             className="relative z-10 text-center"
           >
             <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg shadow-white/10">
-              <span className="text-[#0a0a0a] text-2xl font-bold">M</span>
+              <span className="text-[#000000] text-2xl font-bold">M</span>
             </div>
 
             <motion.h1

@@ -20,12 +20,12 @@ export default function CallToAction() {
             backgroundImage: `url('/images/chandelier-earrings.jpg')`,
           }}
         />
-        <div className="absolute inset-0 bg-[#0a0a0a]/80" />
+        <div className="absolute inset-0 bg-[#000000]/80" />
       </motion.div>
 
       {/* Top/bottom gradient for smooth transitions */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0a0a0a] to-transparent z-[5] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent z-[5] pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#000000] to-transparent z-[5] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#000000] to-transparent z-[5] pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 max-w-[800px] mx-auto text-center">
@@ -79,7 +79,7 @@ export default function CallToAction() {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0a0a0a] text-[12px] tracking-[0.25em] uppercase font-medium hover:bg-[#e8d5a8] transition-all duration-500"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#000000] text-[12px] tracking-[0.25em] uppercase font-medium hover:bg-[#e8d5a8] transition-all duration-500"
           >
             Book Appointment
           </a>

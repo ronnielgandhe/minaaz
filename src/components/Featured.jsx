@@ -43,9 +43,9 @@ function PieceCard({ piece }) {
 
 export default function Featured() {
   return (
-    <section className="relative py-20 md:py-32 px-6 md:px-12 bg-[#0a0a0a] border-t border-white/5">
+    <section className="relative py-20 md:py-32 px-6 md:px-12 bg-[#000000] border-t border-white/5">
       {/* Smooth transition gradient */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#000000] to-transparent z-10 pointer-events-none" />
 
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}

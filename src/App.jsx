@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import Loader from './components/Loader';
-import DiamondParticles from './components/DiamondParticles';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Marquee from './components/Marquee';
 import Collections from './components/Collections';
+import Services from './components/Services';
 import Story from './components/Story';
 import Featured from './components/Featured';
 import Craftsmanship from './components/Craftsmanship';
@@ -21,10 +20,9 @@ function App() {
       {!loaded && <Loader onComplete={() => setLoaded(true)} />}
       {loaded && (
         <>
-          <DiamondParticles />
           <Navbar />
           <Hero />
-          <Marquee />
+          <Services />
           <Collections />
           <Story />
           <Featured />

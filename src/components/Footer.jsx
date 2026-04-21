@@ -3,7 +3,7 @@ import { staggerContainerVariants, staggerItemFadeUp } from './AnimationComponen
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-[#0a0a0a] border-t border-[#1a1a1a]">
+    <footer id="contact" className="bg-[#000000] border-t border-[#1a1a1a]">
       {/* Top: Brand centered */}
       <div className="max-w-[1400px] mx-auto px-8 md:px-16 py-20 md:py-28">
         <motion.div

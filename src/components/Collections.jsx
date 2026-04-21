@@ -55,7 +55,7 @@ function CollectionCard({ col }) {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
           style={{ y: imgY }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/90 via-[#0a0a0a]/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#000000]/90 via-[#000000]/20 to-transparent" />
       </div>
       <div className="absolute bottom-0 left-0 right-0 p-8">
         <h3
@@ -76,9 +76,9 @@ function CollectionCard({ col }) {
 
 export default function Collections() {
   return (
-    <section id="collections" className="relative py-20 md:py-32 px-6 md:px-12 bg-[#0a0a0a]">
+    <section id="collections" className="relative py-20 md:py-32 px-6 md:px-12 bg-[#000000]">
       {/* Top gradient for smooth transition from previous section */}
-      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#0a0a0a] to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#000000] to-transparent z-10 pointer-events-none" />
 
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}

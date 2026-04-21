@@ -11,7 +11,7 @@ export default function HorizontalScroll() {
   const textOpacity = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], [0.3, 1, 1, 0.3]);
 
   return (
-    <section ref={ref} className="h-[200vh] relative bg-[#0a0a0a]">
+    <section ref={ref} className="h-[200vh] relative bg-[#000000]">
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <motion.div style={{ x, opacity: textOpacity }} className="whitespace-nowrap">
           <h2

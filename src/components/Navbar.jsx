@@ -20,7 +20,7 @@ export default function Navbar() {
       transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/5'
+          ? 'bg-[#000000]/95 backdrop-blur-xl border-b border-white/5'
           : 'bg-transparent'
       }`}
     >
@@ -65,7 +65,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-[#0a0a0a] border-t border-white/5 px-6 py-6"
+          className="md:hidden bg-[#000000] border-t border-white/5 px-6 py-6"
         >
           {links.map((link) => (
             <a

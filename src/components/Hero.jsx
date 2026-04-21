@@ -74,7 +74,7 @@ export default function Hero() {
             backgroundImage: `url('/images/diamond-necklace.jpg')`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/40 to-[#0a0a0a]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#000000]/70 via-[#000000]/40 to-[#000000]" />
       </motion.div>
 
       {/* Content */}
@@ -114,8 +114,14 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <a
+            href="#services"
+            className="inline-flex items-center justify-center px-10 py-4 border border-white/20 text-white/80 text-[12px] tracking-[0.25em] uppercase font-light hover:border-[#c9a96e]/50 hover:text-[#c9a96e] transition-all duration-500"
+          >
+            Our Services
+          </a>
+          <a
             href="#collections"
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#0a0a0a] text-[12px] tracking-[0.25em] uppercase font-medium hover:bg-[#e8d5a8] transition-all duration-500"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#c9a96e] text-[#000000] text-[12px] tracking-[0.25em] uppercase font-medium hover:bg-[#e8d5a8] transition-all duration-500"
           >
             Explore Collection
           </a>
@@ -128,20 +134,6 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-10"
-      >
-        <span className="text-[10px] tracking-[0.3em] uppercase text-white/30">Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-[1px] h-8 bg-gradient-to-b from-[#c9a96e] to-transparent"
-        />
-      </motion.div>
     </section>
   );
 }

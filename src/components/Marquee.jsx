@@ -4,7 +4,7 @@ export default function Marquee() {
   const items = ['Diamonds', 'Gold', 'Sapphires', 'Platinum', 'Emeralds', 'Rubies', 'Pearls', 'Craftsmanship'];
 
   return (
-    <div className="py-8 border-y border-white/5 overflow-hidden bg-[#0a0a0a]">
+    <div className="py-8 border-y border-white/5 overflow-hidden bg-[#000000]">
       <motion.div
         animate={{ x: ['0%', '-50%'] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
