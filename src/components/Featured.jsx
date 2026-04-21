@@ -43,7 +43,7 @@ function PieceCard({ piece }) {
 
 export default function Featured() {
   return (
-    <section className="relative py-20 md:py-32 px-6 md:px-12 bg-[#000000] border-t border-white/5">
+    <section id="collections" className="relative py-20 md:py-32 px-6 md:px-12 bg-[#000000] border-t border-white/5">
       {/* Smooth transition gradient */}
       <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-[#000000] to-transparent z-10 pointer-events-none" />
 
@@ -52,7 +52,7 @@ export default function Featured() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div>
             <motion.span {...fadeUp()} className="text-[11px] tracking-[0.4em] uppercase text-[#c9a96e] block mb-4">
-              Featured
+              Our Collection
             </motion.span>
             <WordRevealRich
               as="h2"

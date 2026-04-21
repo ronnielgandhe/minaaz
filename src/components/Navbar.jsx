@@ -11,7 +11,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const links = ['Collections', 'Story', 'Craftsmanship', 'Boutique'];
+  const links = [
+    { label: 'Services', href: '#services' },
+    { label: 'Collection', href: '#collections' },
+    { label: 'Boutique', href: '#boutique' },
+  ];
 
   return (
     <motion.nav
@@ -41,11 +45,11 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
               className="text-[11px] tracking-[0.2em] uppercase text-white/50 hover:text-[#c9a96e] transition-colors duration-300"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </div>
@@ -69,12 +73,12 @@ export default function Navbar() {
         >
           {links.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
               onClick={() => setMenuOpen(false)}
               className="block py-3 text-[12px] tracking-[0.2em] uppercase text-white/50 hover:text-[#c9a96e]"
             >
-              {link}
+              {link.label}
             </a>
           ))}
         </motion.div>

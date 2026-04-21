@@ -126,10 +126,10 @@ export default function Hero() {
             Explore Collection
           </a>
           <a
-            href="#story"
+            href="#boutique"
             className="inline-flex items-center justify-center px-10 py-4 border border-white/20 text-white/80 text-[12px] tracking-[0.25em] uppercase font-light hover:border-[#c9a96e]/50 hover:text-[#c9a96e] transition-all duration-500"
           >
-            Our Story
+            Visit Us
           </a>
         </motion.div>
       </motion.div>
